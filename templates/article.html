@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'index.html' %}
 {% block title %}{{ article.title|striptags }} // {{ super() }}{% endblock title %}
 
 {% block head_css %}
@@ -16,21 +16,7 @@
 
 {% block content %}
 <div class="pure-g-r" id="layout">
-    <div class="sidebar pure-u">
-        <header class="header-article">
-            <hgroup>
-                <a href="{{ SITEURL }}/{{ article.author.url }}" title="See posts by {{ article.author }}">
-                    <img class="post-avatar" alt="{{ article.author }}" src="{{ article.author_gravatar }}" height="100" width="100">
-                </a>
-                <h2 class="article-info">{{ article.author }}</h2>
-                <small class="about-author">{{ article.about_author }}</small>
-                <h5>Published</h5>
-                <p>{{ article.locale_date }}</p>
-                <a href="/">&larr;Home</a>
-                <hr>
-            </hgroup>
-        </header>
-    </div>
+    {% include 'sidebar.html' %}
     <div class="pure-u-3-4">
         <div class="content">
             <section class="post">

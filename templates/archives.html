@@ -15,12 +15,7 @@
                         <h5 class="arhive-date">{{ article.date|strftime('%Y') }}</h5>
                         <h4 class="arhive-date">{{ article.date|strftime('%d %B') }}</h4>
                     </div>
-                    <div class="pure-u-1-8">
-                        <a href="{{ SITEURL }}/{{ article.author.url }}" title="See posts by {{ article.author }}">
-                            <img class="arhive-avatar" alt="{{ article.author }}" src="{{ article.author_gravatar }}" height="52" width="52">
-                        </a>
-                    </div>
-                    <div class="pure-u-1-2">
+                    <div class="pure-u">
                         <a href="{{ article.url }}">{{ article.title }}</a>
                     </div>
                 </div>
