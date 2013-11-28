@@ -18,7 +18,15 @@
                     {% endif %}
                 </h1>
                 {% for article in articles_page.object_list %}
-                    {% include 'post.html' %}
+                    <section class="post">
+                        <header class="post-header">
+                            <h3><a class="post-title" href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+                            <p class="post-meta">{{ article.summary }}</p>
+                            <p class="post-meta">
+                                in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a> &middot; {{ article.locale_date }}
+                            </p>
+                        </header>
+                    </section>
                 {% endfor %}
                 {% include 'pagination.html' %}
                 {% include 'footer.html' %}
