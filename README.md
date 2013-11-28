@@ -1,17 +1,10 @@
 pure
 ====
 
-Simple collaborative blogging theme based on [Purecss](http:purecss.io) for [Pelican](http://docs.getpelican.com/) blogs.
+Simple blogging theme based on [Purecss](http:purecss.io) for [Pelican](http://docs.getpelican.com/) blogs.
 Theme is responsive.
 
 See it live at [testpy.org](http://testpy.org/)
-
-## PREVIEW
-
-![Pure preview](https://raw.github.com/danclaudiupop/pure/master/preview1.png)
-![Pure preview](https://raw.github.com/danclaudiupop/pure/master/preview3.png)
-![Pure preview](https://raw.github.com/danclaudiupop/pure/master/preview2.png)
-
 
 ## PELICANCONF.PY
 
@@ -23,6 +16,7 @@ See it live at [testpy.org](http://testpy.org/)
 
 ## Custom metadata:
 * `about_author` - displayed on article page
+* `sidebarimage` - will replace the image on the sidebar on an article basis
 
 ## Aditional features
 * [FitVids](https://github.com/davatron5000/FitVids.js) jQuery plugin for fluid width video embeds.
