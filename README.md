@@ -4,7 +4,11 @@ pure
 Simple blogging theme based on [Purecss](http:purecss.io) for [Pelican](http://docs.getpelican.com/) blogs.
 Theme is responsive.
 
-See it live at [testpy.org](http://testpy.org/) or on my [blog](http://b.mvmocanu.com)
+## Used by:
+* [testpy.org](http://testpy.org/)
+* [blog.mvmocanu.com](http://blog.mvmocanu.com)
+* [razius.com](http://razius.com)
+
 
 ## PELICANCONF.PY
 
