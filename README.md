@@ -4,12 +4,6 @@ pure
 Simple blogging theme based on [Purecss](http:purecss.io) for [Pelican](http://docs.getpelican.com/) blogs.
 Theme is responsive.
 
-## Used by:
-* [testpy.org](http://testpy.org/)
-* [blog.mvmocanu.com](http://blog.mvmocanu.com)
-* [razius.com](http://razius.com)
-
-
 ## PELICANCONF.PY
 
 * `COVER_IMG_URL` - Set the sidebar image. (Has no default yet). Width and height for image should be 1000px. Image, ideally should be served from a CDN.
@@ -24,3 +18,10 @@ Theme is responsive.
 
 ## Aditional features
 * [FitVids](https://github.com/davatron5000/FitVids.js) jQuery plugin for fluid width video embeds.
+
+## Used by:
+* [testpy.org](http://testpy.org/)
+* [blog.mvmocanu.com](http://blog.mvmocanu.com)
+* [razius.com](http://razius.com)
+* [www.andrewtorkbaker.com](http://www.andrewtorkbaker.com/)
+
