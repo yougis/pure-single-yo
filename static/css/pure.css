@@ -8,6 +8,7 @@ a {
     text-decoration: none;
     color: rgb(142, 142, 214);
 }
+
 a:hover,
 a:focus {
     text-decoration: underline;
@@ -81,6 +82,7 @@ pre {
 .brand-tagline {
     margin: 0;
 }
+
 .brand-title {
     text-transform: uppercase;
 }
@@ -100,12 +102,13 @@ pre {
     float: right;
     margin-bottom: 35px;
 }
-    hr {
-        border: 1px solid #f2f2f0;
-        width: 10%;
-        margin-top: 20px;
-        margin-right: 0px;
-    }
+
+hr {
+    border: 1px solid #f2f2f0;
+    width: 10%;
+    margin-top: 20px;
+    margin-right: 0px;
+}
 
 .header-article {
     width: 767px;
@@ -171,6 +174,7 @@ pre {
     color: #333332;
 }
 
+/* Posts */
 .post {
     padding-bottom: 1em;
     border-bottom: 1px solid #f2f2f0;
@@ -200,6 +204,7 @@ pre {
     font-size: 90%;
 }
 
+/* Arhive page */
 .arhive-item {
     padding: 0.9em 1em;
     border-left: 6px solid #ddd;
@@ -214,6 +219,7 @@ pre {
     margin-right: 0.5em;
 }
 
+/* Footer */
 .footer {
     text-align: center;
     padding: 2em 0;
@@ -224,6 +230,7 @@ pre {
     background: none;
 }
 
+/* Pagination */
 .pagination-wrapper {
     padding-top: 6px;
 }
