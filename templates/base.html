@@ -23,6 +23,7 @@
     {% endblock head %}
 
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pure.css">
     {% block head_css %}{% endblock %}
 
@@ -42,9 +43,13 @@
                             {% for title, link in MENUITEMS %}
                                 <p class="links"><a href="{{ SITEURL }}/{{ link }}">{{ title }}</a></p>
                             {% endfor %}
+                                <p class="social">
                             {% for title, link in SOCIAL %}
-                                <p class="links"><a href="{{ link }}">{{ title }}</a></p>
+                                    <a href="{{ link }}">
+                                        <i class="fa fa-{{ title }} fa-3x"></i>
+                                    </a>
                             {% endfor %}
+                                <p>
                         </hgroup>
                     </header>
                 </div>
