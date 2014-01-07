@@ -112,7 +112,7 @@ pre {
 .tagline {
     margin-left: 15px;
     margin-top: -15px;
-    line-height: 0.8em;
+    line-height: 15px;
     font-size: 80%;
     text-shadow: 0 1px 3px rgba(0,0,0,0.3);
     color: #fff;
