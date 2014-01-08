@@ -260,7 +260,7 @@ pre {
         width: 100%;
         position: relative;
         margin: 0;
-        height: 425px;
+        height: 325px;
     }
     .content {
         padding: 1em 1.5em 0;
@@ -282,12 +282,6 @@ pre {
         text-align: center;
         top: auto;
         position: static;
-    }
-
-    hr {
-        border: 1px solid #f2f2f0;
-        width: inherit;
-        margin: 25px auto;
     }
 
     #layout {
