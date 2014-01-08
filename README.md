@@ -6,14 +6,13 @@ Theme is responsive.
 
 ## PELICANCONF.PY
 
-* `COVER_IMG_URL` - Set the sidebar image. (Has no default yet). Width and height for image should be 1000px. Image, ideally should be served from a CDN.
+* `COVER_IMG_URL` - Set the sidebar image.
+* `PROFILE_IMAGE_URL` - Set the image for the top circle cutout.
 * `TAGLINE` - Used for the page titles and some meta tags.
 * `DISQUS_SITENAME` - Set this to enable disqus comments in articles.
-* `GRAVATAR` - See pelican-plugins for configuration.
 * `GOOGLE_ANALYTICS`
 
 ## Custom metadata:
-* `about_author` - displayed on article page
 * `sidebarimage` - will replace the image on the sidebar on an article basis
 
 ## Aditional features
