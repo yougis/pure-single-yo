@@ -38,6 +38,9 @@
                 <div class="cover-body">
                     <header class="header">
                         <hgroup>
+                            {% if PROFILE_IMG_URL %}
+                            <img class="avatar" src="{{ PROFILE_IMG_URL }}">
+                            {% endif %}
                             <h1 class="brand-main"><a href="/">{{ SITENAME }}</a></h1>
                             <p class="tagline">{{ TAGLINE }}</p>
                             {% for title, link in MENUITEMS %}
