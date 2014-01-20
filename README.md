@@ -1,7 +1,7 @@
-pure
-====
+Pure Single
+===========
 
-Simple blogging theme based on [Purecss](http:purecss.io) for [Pelican](http://docs.getpelican.com/) blogs.
+[Blogging theme](http://purepelican.com) based on [Purecss](http:purecss.io) for [Pelican](http://docs.getpelican.com/) blogs.
 Theme is responsive.
 
 ## PELICANCONF.PY
