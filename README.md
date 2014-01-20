@@ -10,7 +10,12 @@ Theme is responsive.
 * `PROFILE_IMAGE_URL` - Set the image for the top circle cutout.
 * `TAGLINE` - Used for the page titles and some meta tags.
 * `DISQUS_SITENAME` - Set this to enable disqus comments in articles.
-* `GOOGLE_ANALYTICS`
+* `GOOGLE_ANALYTICS` - Set the Google Analytics code (eg. "UA-000000-00"
+* `SOCIAL` - Set some social links in the sidebar. The format should be like this:
+    `SOCIAL = (
+        ('github', 'https://github.com/example/'),
+        ('twitter-square', 'https://twitter.com/example'),
+    )`
 
 ## Custom metadata:
 * `sidebarimage` - will replace the image on the sidebar on an article basis
