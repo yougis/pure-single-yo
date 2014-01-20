@@ -12,10 +12,14 @@ Theme is responsive.
 * `DISQUS_SITENAME` - Set this to enable disqus comments in articles.
 * `GOOGLE_ANALYTICS` - Set the Google Analytics code (eg. "UA-000000-00"
 * `SOCIAL` - Set some social links in the sidebar. The format should be like this:
-    `SOCIAL = (
+
+    ```python
+    SOCIAL = (
         ('github', 'https://github.com/example/'),
         ('twitter-square', 'https://twitter.com/example'),
-    )`
+    )
+    ```
+    where the first value of the tuple is the icon name from http://fontawesome.io/icons/ after stripping `fa-` (eg. `fa-github` will be `github`)
 
 ## Custom metadata:
 * `sidebarimage` - will replace the image on the sidebar on an article basis
@@ -23,9 +27,4 @@ Theme is responsive.
 ## Aditional features
 * [FitVids](https://github.com/davatron5000/FitVids.js) jQuery plugin for fluid width video embeds.
 
-## Used by:
-* [testpy.org](http://testpy.org/)
-* [blog.mvmocanu.com](http://blog.mvmocanu.com)
-* [razius.com](http://razius.com)
-* [www.andrewtorkbaker.com](http://www.andrewtorkbaker.com/)
 
