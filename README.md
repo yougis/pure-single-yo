@@ -10,7 +10,7 @@ Theme is responsive.
 * `PROFILE_IMAGE_URL` - Set the image for the top circle cutout.
 * `TAGLINE` - Used for the page titles and some meta tags.
 * `DISQUS_SITENAME` - Set this to enable disqus comments in articles.
-* `GOOGLE_ANALYTICS` - Set the Google Analytics code (eg. "UA-000000-00"
+* `GOOGLE_ANALYTICS` - Set the Google Analytics code (eg. "UA-000000-00")
 * `SOCIAL` - Set some social links in the sidebar. The format should be like this:
 
     ```python
@@ -21,7 +21,7 @@ Theme is responsive.
     ```
     where the first value of the tuple is the icon name from http://fontawesome.io/icons/ after stripping `fa-` (eg. `fa-github` will be `github`)
 
-## Custom metadata:
+## Custom article metadata:
 * `sidebarimage` - will replace the image on the sidebar on an article basis
 
 ## Aditional features
