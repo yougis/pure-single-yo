@@ -11,7 +11,7 @@ Theme is responsive.
 * `TAGLINE` - Used for the page titles and some meta tags.
 * `DISQUS_SITENAME` - Set this to enable disqus comments in articles.
 * `GOOGLE_ANALYTICS` - Set the Google Analytics code (eg. "UA-000000-00")
-* `PIWIK_URL` and `PIWIK_SITE_ID` - Set the URL and site-id for Piwik tracking.
+* `PIWIK_URL` and `PIWIK_SITE_ID` - Set the URL and site-id for Piwik tracking. (Without 'http://')
 * `SOCIAL` - Set some social links in the sidebar. The format should be like this:
 
     ```python
