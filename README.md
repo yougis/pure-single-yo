@@ -7,7 +7,7 @@ Theme is responsive.
 ## PELICANCONF.PY
 
 * `COVER_IMG_URL` - Set the sidebar image.
-* `PROFILE_IMAGE_URL` - Set the image for the top circle cutout.
+* `PROFILE_IMG_URL` - Set the image for the top circle cutout.
 * `TAGLINE` - Used for the page titles and some meta tags.
 * `DISQUS_SITENAME` - Set this to enable disqus comments in articles.
 * `GOOGLE_ANALYTICS` - Set the Google Analytics code (eg. "UA-000000-00")
