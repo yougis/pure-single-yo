@@ -1,6 +1,6 @@
 {% extends 'index.html' %}
-{% block sidebar %}{% if article.sidebarimage %}{{ article.sidebarimage }}{% else %}{{ super() }}{% endif %}{% endblock %}
-{% block title %}{{ article.title|striptags }} // {{ super() }}{% endblock title %}
+{% block sidebar %}{% if article %}{% if article.sidebarimage %}{{ article.sidebarimage }}{% endif %}{% else %}{{ super() }}{% endif %}{% endblock %}
+{% block title %}{% if article %}{{ article.title|striptags }} // {{ super() }}{% endif %}{% endblock title %}
 
 {% block head_css %}
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygments.css">
@@ -26,15 +26,24 @@
         <div class="content">
             <section class="post">
                 <header class="post-header">
+		{% if article %}					
                     <h1>{{ article.title }}</h1>
                         <p class="post-meta">
                             {% for tag in article.tags %}
                                 <a class="post-category" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
                             {% endfor %}
                         </p>
-                </header>
+                </header>							
+		{% endif %}
+				
             </section>
-            {{ article.content }}
+			{% if article %}	
+				{{ article.content }}
+			{% endif %}
+			{% if photoset or photo %}	
+			{% block flickr %}
+            {% endblock  %}
+			{% endif %}
             <a href="#" class="go-top">Go Top</a>
             {% include 'disqus.html' %}
             {% include 'footer.html' %}
