@@ -26,24 +26,33 @@
         <div class="content">
             <section class="post">
                 <header class="post-header">
-		{% if article %}					
+                    {% if article %}					
                     <h1>{{ article.title }}</h1>
                         <p class="post-meta">
                             {% for tag in article.tags %}
                                 <a class="post-category" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
                             {% endfor %}
                         </p>
+                    {% endif %}
+                    {% if photo %}
+                    <h1>{{ photo.title }}</h1>
+                     <p class="post-meta">
+                            {% for tag in photo.tags %}
+                                <a class="post-category" href="{{ SITEURL }}/{{ tag.url }}">{{ tag.tag }}</a>
+                            {% endfor %}
+                        </p>
+                    {% endif %}
                 </header>							
-		{% endif %}
+		          
 				
             </section>
 			{% if article %}	
 				{{ article.content }}
 			{% endif %}
 			{% if photoset or photo %}	
-			{% block flickr %}
+                {% block flickr %}
             {% endblock  %}
-			{% endif %}
+            {% endif %}
             <a href="#" class="go-top">Go Top</a>
             {% include 'disqus.html' %}
             {% include 'footer.html' %}
