@@ -3,7 +3,16 @@
 {% block content %}
     <div class="pure-u">
         <div class="content">
-            <!-- A wrapper for all the blog posts -->
+
+          
+
+            <ul class="tagcloud">
+                {% for tag in tag_cloud %}
+                    <li class="tag-{{ tag.1 }}"><a href="{{ SITEURL }}/{{ tag.0.url }}">{{ tag.0 }}</a></li>
+                {% endfor %}
+            </ul>
+
+             <!-- A wrapper for all the blog posts -->          
             <div class="posts">
                 <h1 class="content-subhead">
                     {% block pagetitle %}
