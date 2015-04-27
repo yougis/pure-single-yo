@@ -32,14 +32,12 @@
                     <section class="post">
                         <header class="post-header">
                             <h3><a class="post-title" href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
-                            <p class="post-meta">
-                            {% for tag in article.tags %}
-                                <a class="post-category" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
-                            {% endfor %}
-                            </p>
                             <p class="post-meta">{{ article.summary }}</p>
                             <p class="post-meta">
                                 in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a> &middot; {{ article.locale_date }}
+                                {% for tag in article.tags %}
+                                <a class="post-category" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+                                {% endfor %}
                             </p>
                         </header>
                     </section>
