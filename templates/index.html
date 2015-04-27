@@ -2,7 +2,16 @@
 
 {% block content %}
     <div class="pure-u">
-        <div class="content">
+        <div class="pure-menu pure-menu-horizontal">
+            <a href="#" class="pure-menu-heading pure-menu-link"></a>
+            <ul class="pure-menu-list">
+                {% for cat in article.category %}
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">{{ article.category }}</a></li>
+                {% endfor %}
+            </ul>
+            {% include 'newsletter.html' %}
+        </div>
+        <div class="content">            
             <ul class="tagcloud">
                 {% for tag in tag_cloud %}
                     <li class="tag-{{ tag.1 }}"><a href="{{ SITEURL }}/{{ tag.0.url }}">{{ tag.0 }}</a></li>
@@ -43,7 +52,7 @@
                     </section>
                 {% endfor %}
                 {% include 'pagination.html' %}
-                {% include 'newsletter.html' %}
+
                 {% include 'footer.html' %}
             </div>
         </div>
