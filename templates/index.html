@@ -1,7 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
-        <div class="pure-menu pure-menu-horizontal">
+
+        <div class="pure-u">
+           <div class="pure-menu pure-menu-horizontal">
             <a href="#" class="pure-menu-heading pure-menu-link">TEST</a>
             <ul class="pure-menu-list">                
                 {% for category, articles in categories %}
@@ -9,9 +11,7 @@
                 {% endfor %}
             </ul>
             
-        </div>
-        <div class="pure-u">
-        
+            </div>
         <div class="content">            
             <ul class="tagcloud">
                 {% for tag in tag_cloud %}
