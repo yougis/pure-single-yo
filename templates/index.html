@@ -3,10 +3,10 @@
 {% block content %}
     <div class="pure-u">
         <div class="pure-menu pure-menu-horizontal">
-            <a href="#" class="pure-menu-heading pure-menu-link"></a>
+            <a href="#" class="pure-menu-heading pure-menu-link">TEST</a>
             <ul class="pure-menu-list">                
                 {% for category, articles in categories %}
-                <li class="pure-menu-item"><a href="/category/"{{ category }} class="pure-menu-link">{{ category }}</a></li>
+                <li class="pure-menu-item"><a href="/category/"{{category}}".html" class="pure-menu-link">{{ category }}</a></li>
                 {% endfor %}
             </ul>
             
