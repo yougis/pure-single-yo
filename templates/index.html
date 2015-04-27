@@ -5,11 +5,11 @@
         <div class="pure-menu pure-menu-horizontal">
             <a href="#" class="pure-menu-heading pure-menu-link"></a>
             <ul class="pure-menu-list">                
-                {% for article in articles_page.object_list %}
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link">{{ article.category }}</a></li>
+                {% for category, articles in categories %}
+                <li class="pure-menu-item"><a href="/category/"{{ category }} class="pure-menu-link">{{ category }}</a></li>
                 {% endfor %}
             </ul>
-            {% include 'newsletter.html' %}
+            
         </div>
         <div class="content">            
             <ul class="tagcloud">
@@ -52,7 +52,7 @@
                     </section>
                 {% endfor %}
                 {% include 'pagination.html' %}
-
+                {% include 'newsletter.html' %}
                 {% include 'footer.html' %}
             </div>
         </div>
