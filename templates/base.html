@@ -63,6 +63,14 @@
                 </div>
             </div>
         </div>
+        <div class="pure-menu pure-menu-horizontal" style="background: rgb(247, 247, 247);">
+                
+                <ul class="pure-menu-list">                
+                    {% for category, articles in categories %}
+                    <li class="pure-menu-item"><a href="{{ SITEURL }}/{{ category.url }}" class="pure-menu-link">{{ category }}</a></li>
+                    {% endfor %}
+                </ul>
+        </div>
         {% block content %}
         {% endblock %}
     </div>

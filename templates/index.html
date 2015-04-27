@@ -5,15 +5,7 @@
         <div class="pure-u">
 
         <div class="content">  
-                <div class="pure-menu pure-menu-horizontal" style="background: rgb(247, 247, 247);">
-                
-                <ul class="pure-menu-list">                
-                    {% for category, articles in categories %}
-                    <li class="pure-menu-item"><a href="{{ SITEURL }}/{{ category.url }}" class="pure-menu-link">{{ category }}</a></li>
-                    {% endfor %}
-                </ul>
-                
-            </div>          
+                      
             <ul class="tagcloud">
                 {% for tag in tag_cloud %}
                     <li class="tag-{{ tag.1 }}"><a href="{{ SITEURL }}/{{ tag.0.url }}">{{ tag.0 }}</a></li>
