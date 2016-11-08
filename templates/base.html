@@ -19,7 +19,7 @@
     {% endif %}
 
     {% block head %}
-        <title>{% block title %}{{ SITENAME }} // {{ TAGLINE }}{% endblock title %}</title>
+        <title>{% block title %}Le {{ SITENAME }}  {{ TAGLINE }}{% endblock title %}</title>
     {% endblock head %}
 
     {% if FAVICON_URL %}
@@ -41,6 +41,7 @@
         <div class="sidebar pure-u">
             <div class="cover-img" style="background-image: url('{% block sidebar %}{{ COVER_IMG_URL }}{% endblock %}')">
                 <div class="cover-body">
+                <div> <a href='http://geodatup.fr'>Retour au site</a></div>
                     <header class="header">
                         <hgroup>
                             {% if PROFILE_IMG_URL %}
