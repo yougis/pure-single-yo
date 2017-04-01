@@ -41,8 +41,7 @@
         <div class="sidebar pure-u">
             <div class="cover-img" style="background-image: url('{% block sidebar %}{{ COVER_IMG_URL }}{% endblock %}')">
                 <div class="cover-body">
-                <div> <a href='http://geodatup.fr'>Retour au site</a></div>
-                    <header class="header">
+                <header class="header">
                         <hgroup>
                             {% if PROFILE_IMG_URL %}
                             <img class="avatar" src="{{ PROFILE_IMG_URL }}">
@@ -66,10 +65,11 @@
         </div>
         <div class="pure-menu pure-menu-horizontal" style="background: rgb(247, 247, 247);">
                 
-                <ul class="pure-menu-list">                
-                    {% for category, articles in categories %}
+                <ul class="pure-menu-list">  
+                 <li class="pure-menu-item"><a href='http://geodatup.fr' class="pure-menu-link">Geodatup</a></li>                              
+                    <!--{% for category, articles in categories %}
                     <li class="pure-menu-item"><a href="{{ SITEURL }}/{{ category.url }}" class="pure-menu-link">{{ category }}</a></li>
-                    {% endfor %}
+                    {% endfor %}-->
                 </ul>
         </div>
         {% block content %}
